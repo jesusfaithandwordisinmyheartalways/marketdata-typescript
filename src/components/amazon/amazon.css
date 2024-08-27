@@ -1,0 +1,1129 @@
+
+
+
+
+
+
+
+
+
+
+
+:root {
+    --white:white;
+    --purple:purple;
+    --black:black;
+    --rotate-speed: 40;
+    --count: 8; /* Default count, the DOM element should override this */
+    --easeInOutSine: cubic-bezier(0.37, 0, 0.63, 1);
+    --easing: cubic-bezier(0.000, 0.37, 1.000, 0.63);
+
+}
+
+
+
+
+body{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    overflow-y: scroll;
+    
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------NAVBAR------------------------------------------------*/
+
+
+
+.amazon-nav-container {
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top:0px;
+    z-index: 110;
+    visibility: visible;
+    background:black;
+
+}
+
+
+
+
+.amazon-nav-wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin:0 auto;
+    max-width: 2000px;
+}
+
+.amazon-nav-wrapper img {
+    width:99px;
+    object-fit: contain;
+    background:none;
+}
+
+
+.amazon-nav-wrapper span {
+    font-size: 5rem;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+}
+
+.amazon-span-header {
+    visibility: visible;
+}
+
+
+
+
+.amazon-nav-wrapper span:hover {
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------NAV MENU MODAL------------------------------------------*/
+
+
+.amazon-nav-menu-container {
+    width: 50%;
+    height: fit-content;
+    overflow: hidden;
+    background:black;
+    position: fixed;
+    top:0px;
+    right:0px;
+    visibility: hidden;
+
+
+
+}
+
+
+.amazon-nav-menu {
+    margin:0 auto;
+}
+
+
+.amazon-nav-menu-content-wrapper {
+    display: block;
+    padding:1em;
+    margin:0 auto;
+    text-align: center;
+    margin-block:90px;
+
+}
+
+.amazon-nav-menu-content-wrapper button {
+    color:white;
+    font-size: 1.9rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    margin:20px 0px;
+}
+
+
+.amazon-nav-menu-content-wrapper button:hover {
+    color:seagreen;
+
+}
+
+
+.amazon-nav-menu-btn {
+    display: block;
+    margin: 0 auto;
+    max-width: 50px;
+    visibility: hidden;
+
+}
+
+.amazon-nav-menu-btn button {
+    position: relative;
+    top:-660px;
+    left: 190px;;
+    font-size: 3rem;
+    color:white;
+    cursor:pointer;
+    border:none;
+    outline:none;
+    background:transparent
+}
+
+
+
+.amazon-nav-menu-btn button:hover {
+    color:red
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------HEADER-----------------------------------------*/
+
+
+
+
+.Amazon-Header-Container {
+    width: 100%;
+    overflow: hidden;
+    visibility: visible;
+    background:url(../images/Amazon\ headquarters.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:local;
+    background-position:10% 110%;
+    
+   
+
+
+}
+
+
+
+
+
+.Amazon-Header-Wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin:0 auto;
+    max-width: 1300px;
+    margin-block:90px;
+}
+
+
+
+.Amazon-Header-Wrapper img {
+    width: 120px;
+    mix-blend-mode: multiply;
+    object-fit: contain;
+    background:transparent
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------AMAZON ANIMATION CONTAINER-------------------------*/
+
+
+.Header-Animation-Container {
+    width: 100%;
+    overflow: hidden;
+    height: 610px;
+    margin-block:-110px;
+    visibility: visible;
+}
+
+
+
+
+.Animation-Container {
+
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+
+}
+
+
+.Animation-Section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; 
+    animation: rotate360 60s infinite forwards linear;
+}
+
+
+
+
+
+@keyframes rotate360 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+  }
+
+
+
+
+  .Animation-Section img {
+    width:160px;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    background: transparent;
+  }
+
+
+
+
+
+.animation-carousel {
+    display: flex;
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+}
+
+
+.animation-carousel img {
+    width: 190px;
+    object-fit: contain;
+}
+
+
+
+
+
+.animation-carousel:nth-last-of-type(1) {
+    transform: rotateY(320deg) translateZ(430px);
+}
+
+
+
+.animation-carousel:nth-last-of-type(2) {
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+
+.animation-carousel:nth-last-of-type(3) {
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+
+.animation-carousel:nth-last-of-type(4) {
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+
+.animation-carousel:nth-last-of-type(5) {
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+
+
+.animation-carousel:nth-last-of-type(6) {
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+
+.animation-carousel:nth-last-of-type(7) {
+    transform: rotateY( 80deg) translateZ(430px);
+}
+
+.animation-carousel:nth-last-of-type(8) {
+    transform: rotateY( 40deg) translateZ(430px); 
+}
+
+
+.animation-carousel:nth-last-of-type(9) {
+    transform: rotateY(  0deg) translateZ(430px);
+}
+
+ 
+
+  
+
+
+
+
+
+
+
+
+
+/*---------------------------AMAZON CONTENT-------------------------*/
+
+
+.Amazon-Content-Container {
+    width: 100%;
+    overflow: hidden;
+    background:royalblue;
+    height: 800px;
+    margin-block:-10px;
+    visibility: visible;
+}
+
+
+
+.Amazon-Content-Wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin:0 auto;
+    max-width: 1500px;
+}
+
+
+
+
+.Amazon-Content-Wrapper h3 {
+    font-size: 2.8rem;
+    color:whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+.Amazon-Content-Wrapper-Two {
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    margin:0 auto;
+    max-width: 1800px;
+}
+
+
+
+.Amazon-Content-Wrapper-Two img {
+    width: 210px;
+    object-fit: contain;
+}
+
+
+.Amazon-Content-Wrapper-Two  p {
+    width: 550px;
+    color:white;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+
+
+
+
+.Amazon-Content-Wrapper-Three {
+    display: flex;
+    align-items:baseline;
+    justify-content: center;
+    margin:0 auto;
+    max-width: 1300px;
+}
+
+
+
+.Amazon-Content-Wrapper-Three h3 {
+    color:gold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+}
+
+
+
+
+
+.Amazon-Content-Wrapper-Four {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin:0 auto;
+    max-width: 550px;
+}
+
+
+
+.Amazon-Content-Wrapper-Four p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    color:white;
+    width: 550px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------INVEST AMAZON CONTENT -------------------------*/
+
+
+.Amazon-Container-Invest {
+    width: 100%;
+    overflow: hidden;
+    background:white;
+    height: 1400px;
+    visibility: visible;
+}
+
+
+
+
+
+
+.Amazon-Wrapper-Invest {
+    display: flex;
+    align-items:baseline;
+    margin:0 auto;
+    max-width: 1300px;  
+}
+
+
+
+.Amazon-Wrapper-Invest h3 {
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:royalblue;
+
+}
+
+
+
+.Amazon-Wrapper-Invest-Two {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin:0 auto;
+    max-width: 600px;  
+    border:3px solid gold;
+    border-radius:10px;
+    box-shadow:0px 30px 50px -45px whitesmoke inset;
+    position: relative;
+    top:0px;
+    left: -1100px;
+    animation-name:wrapper;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    transition: linear;
+
+
+}
+
+
+
+@keyframes wrapper {
+
+    0% {
+       top:0px;
+       left: -1100px;
+       transition: 10s linear;
+
+    }
+
+    3% {
+        top:0px;
+        left: 0px;
+        transition: 10s linear;
+
+    }
+
+    100% {
+        top:0px;
+        left: 1100px;
+        transition: 10s linear;
+
+
+    }
+
+}
+
+
+.Amazon-Wrapper-Invest-Two h3 {
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:dodgerblue;
+
+}
+
+
+
+.Amazon-Wrapper-Invest-Two p {
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.9rem;
+    width: 550px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+.Amazon-Wrapper-Invest-Three {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin:0 auto;
+    max-width: 600px;  
+    border:3px solid orange;
+    border-radius:10px;
+    box-shadow:0px 30px 50px -45px whitesmoke inset;
+    position: relative;
+    top:20px;
+    right: 1100px;
+    animation-name:wrapperTwo;
+    animation-delay:3s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    transition: linear;
+
+}
+
+
+@keyframes wrapperTwo {
+   
+    0% {
+        top:20px;
+        right: 1100px;
+        transition: 10s linear;
+ 
+     }
+ 
+     3% {
+        top:20px;
+        right: 0px;
+         transition: 10s linear;
+ 
+     }
+ 
+     100% {
+        top:20px;
+        right: -1100px;
+         transition: 10s linear;
+ 
+ 
+     }
+}
+
+
+
+
+.Amazon-Wrapper-Invest-Three h3 {
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:dodgerblue;
+
+}
+
+
+
+.Amazon-Wrapper-Invest-Three p {
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.9rem;
+    width: 550px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.Amazon-Wrapper-Invest-Four {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin:0 auto;
+    max-width: 600px;  
+    border:3px solid black;
+    border-radius:10px;
+    box-shadow:0px 30px 50px -45px whitesmoke inset;
+    position: relative;
+    top:30px;
+    left: 1100px;
+    animation-name:wrapperThree;
+    animation-delay:5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    transition: linear;
+}
+
+
+@keyframes wrapperThree {
+   
+    0% {
+        top:30px;
+        left: 1100px;
+        transition: 10s linear;
+ 
+     }
+ 
+     3% {
+        top:30px;
+         left: 0px;
+         transition: 10s linear;
+ 
+     }
+ 
+     100% {
+        top:30px;
+         left: -1100px;
+         transition: 10s linear;
+ 
+ 
+     }
+}
+
+
+
+
+
+.Amazon-Wrapper-Invest-Four h3 {
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:dodgerblue;
+
+}
+
+
+
+.Amazon-Wrapper-Invest-Four p {
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.9rem;
+    width: 550px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+.Amazon-Wrapper-Invest-Five {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin:0 auto;
+    max-width: 600px;  
+    border:3px solid red;
+    border-radius:10px;
+    box-shadow:0px 30px 50px -45px whitesmoke inset;
+    position: relative;
+    top:50px;
+    right: 1100px;
+    animation-name:wrapperFour;
+    animation-delay:7s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    transition: linear;
+
+}
+
+
+@keyframes wrapperFour {
+   
+    0% {
+        top:50px;
+        right: 1100px;
+        transition: 10s linear;
+ 
+     }
+ 
+     3% {
+        top:50px;
+        right: 0px;
+         transition: 10s linear;
+ 
+     }
+ 
+     100% {
+        top:50px;
+        right: -1100px;
+         transition: 10s linear;
+ 
+ 
+     }
+}
+
+
+
+
+
+.Amazon-Wrapper-Invest-Five h3 {
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:dodgerblue;
+
+}
+
+
+
+.Amazon-Wrapper-Invest-Five p {
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.9rem;
+    width: 550px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.Amazon-Wrapper-Invest-Six {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin:0 auto;
+    max-width: 600px;  
+    border:3px solid purple;
+    border-radius:10px;
+    box-shadow:0px 30px 50px -45px whitesmoke inset;
+    position: relative;
+    top:70px;
+    left: 1100px;
+    animation-name:wrapperFive;
+    animation-delay:9s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    transition: linear;
+
+}
+
+
+@keyframes wrapperFive {
+   
+    0% {
+        top:70px;
+        left: 1100px;
+        transition: 10s linear;
+ 
+     }
+ 
+     3% {
+        top:70px;
+        left: 0px;
+         transition: 10s linear;
+ 
+     }
+ 
+     100% {
+        top:70px;
+        left: -1100px;
+         transition: 10s linear;
+ 
+ 
+     }
+}
+
+
+
+
+
+.Amazon-Wrapper-Invest-Six h3 {
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:dodgerblue;
+
+}
+
+
+
+.Amazon-Wrapper-Invest-Six p {
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.9rem;
+    width: 550px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+.Amazon-Wrapper-Invest-Seven {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin:0 auto;
+    max-width: 600px;  
+    border:3px solid seagreen;
+    border-radius:10px;
+    box-shadow:0px 30px 50px -45px whitesmoke inset;
+    position: relative;
+    top:110px;
+    right: 1100px;
+    animation-name:wrapperSix;
+    animation-delay:12s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    transition: linear;
+
+}
+
+
+@keyframes wrapperSix {
+   
+    0% {
+        top:110px;
+        right: 1100px;
+        transition: 10s linear;
+ 
+     }
+ 
+     3% {
+        top:110px;
+        right: 0px;
+        transition: 10s linear;
+ 
+     }
+ 
+     100% {
+        top:110px;
+        right: -1100px;
+        transition: 10s linear;
+ 
+ 
+     }
+}
+
+
+
+
+
+.Amazon-Wrapper-Invest-Seven h3 {
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:dodgerblue;
+
+}
+
+
+
+.Amazon-Wrapper-Invest-Seven p {
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.9rem;
+    width: 550px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------FOOTER ------------------------------------------------------*/
+
+.footer-container {
+    position: relative;
+    bottom:0px;
+    width: 100%;
+    overflow: hidden;
+    background:black;
+    height: 310px;
+    visibility: visible;
+   }
+
+
+
+
+   .footer-wrapper {
+    display: flex;
+    align-items:baseline;
+    margin:0 auto;
+    max-width: 1300px;
+
+   }
+
+   .footer-wrapper h3 {
+    color:white;
+    font-size: 4rem;
+   }
+
+
+
+   .footer-wrapper-two {
+    display: flex;
+    align-items:baseline;
+    margin:0 auto;
+    max-width: 1300px;
+    margin-block: -80px;
+
+   }
+
+
+   .footer-wrapper-two p {
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  
+   }
+
+
+
+   .footer-wrapper-three {
+    display: flex;
+    align-items:baseline;
+    margin:0 auto;
+    max-width: 1300px;
+    margin-block: 63px;
+
+   }
+
+
+   .footer-wrapper-three p {
+    color:slategray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+   }
+
+
+
+   .footer-wrapper-four {
+    display: flex;
+    align-items:baseline;
+    margin:0 auto;
+    max-width: 1300px;
+    margin-block: -55px;
+
+   }
+
+
+
+   .footer-wrapper-four h3 {
+    color:white;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+
+
+
+   .footer-wrapper-five {
+    display: flex;
+    align-items:baseline;
+    margin:0 auto;
+    max-width: 1300px;
+    margin-block: 60px;
+
+   }
+
+
+   .footer-wrapper-five span,
+   .footer-wrapper-five p {
+    color:greenyellow;
+    font-size: 0.8rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+
+
+
