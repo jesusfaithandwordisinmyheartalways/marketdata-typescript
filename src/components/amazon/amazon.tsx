@@ -21,6 +21,8 @@ import amazonImageFive from '../images/amazonimagefive.png'
 import amazonImageSix from '../images/amazonrszglobal_amazn-1.png';
 import amazonImageSeven from '../images/Jeff-Bezos.png';
 import amazonImageEight from '../images/amazonsmile.png';
+import amazonImageNine from '../images/amazonblacklogo.png';
+
 import logo from '../images/top-product-design-clutch.png';
 import aLogo from '../images/-amazon-com.png';
 
@@ -155,7 +157,7 @@ return (
 
 <nav className='amazon-nav-container' id='nav-container'>
         <div className='amazon-nav-wrapper'>
-            <div className='amazon-nav-stock-header'> <div><div><img src={aLogo}></img></div></div> </div>
+            <div className='amazon-nav-stock-header'> <div><div><img src={amazonImageNine}></img></div></div> </div>
 
             <div onClick={Menu} className='amazon-span-header' id="span-header"><div><span>&#61;</span></div></div>
 
@@ -250,6 +252,10 @@ return (
 <div className="animation-carousel"><div><img src={amazonImageSeven}></img></div></div>
 
 <div className="animation-carousel"><div><img src={amazonImageEight}></img></div></div>
+
+
+<div className="animation-carousel"><div><img src={amazonImageNine}></img></div></div>
+
 
 
 

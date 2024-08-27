@@ -1255,6 +1255,66 @@ body {
 
 
 
+   /*---------------------------------ABOUT US- ------------------------------------------------------*/
+
+.About-Us {
+    width: 100%;
+    overflow: hidden;
+    height: 810px;
+    background:url('../images/amazonimagefour.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation-name:aboutUs;
+    animation-delay:0s;
+    animation-direction:alternate;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+    animation-duration:15s
+}
+
+    @keyframes aboutUs {
+        0% {background: url('../images/amazonimagefour.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top center;
+        };
+            
+
+        20%{
+            background: url('../images/microsoftCeoo.jpg') ;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;}
+            ;
+
+        40%{background:url('../images/metaheadquarters.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        };
+
+        60% {
+            background:url('../images/teslawhiteelogo.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+
+        }
+
+        75%{background:url('../images/microsoftcompany.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top center;
+        };
+
+        100%{background:url('../images/googleImageSix.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top center;
+        };
+    }
+
 
 
 

@@ -10,6 +10,7 @@ import { useEffect } from 'react';
 import '../stock/stocks.css';
 import { Link } from 'react-router-dom';
 import amazon from '../images/-amazon-com.png';
+import amazonUpdatedLogo from '../images/amazonupdatedlogo.jpg'
 import apple from '../images/Apple-stock-logo-.png';
 import google from '../images/google.png';
 import microsoft from '../images/microsoft-icon.png';
@@ -231,7 +232,7 @@ const Stocks = () => {
 
         <div className='top-elements'>
           <div className='top'><div><img src={tesla}></img></div></div>
-          <div className='two'><div><img src={amazon}></img></div></div>
+          <div className='two'><div><img src={amazonUpdatedLogo}></img></div></div>
           <div className='three'><div><img src={google}></img></div></div>
 
         </div>
@@ -437,7 +438,7 @@ const Stocks = () => {
                 top: scrollTop > 695 ? '-10px' : '50px',
                 transition: 'top 1.5s linear'
             }} className='stock-content-two'>
-                <div><div><img src={amazon}></img></div></div>
+                <div><div><img src={amazonUpdatedLogo}></img></div></div>
                 {data && 
                 <div className='amazon-header-symbol'><div><h3>{data.amazonSym}</h3></div></div>
                 }
@@ -584,18 +585,29 @@ const Stocks = () => {
 
 
       </div>
-
-
-
-
-
-
-
-
-
-
-             
       
+      
+      
+      
+      
+      
+      
+      
+      {/*-----------------------------------------ABOUT US-------------------------------------------------------*/}
+
+                    <div className="About-Us">
+
+                        <div className='About-Us-Wrapper'>
+
+
+
+                            
+                        </div>
+
+
+
+
+                    </div>
       
       
       

@@ -24,6 +24,7 @@ import aimageEight from '../images/teslapiceight.png';
 import aimageNine from '../images/teslaredlogo.png';
 import elonImage from '../images/elonmusk.png'
 import logo from '../images/top-product-design-clutch.png';
+import teslaWhite from '../images//teslawhiteelogo.jpg'
 import '../tesla/tesla.css'
 
 
@@ -172,7 +173,7 @@ const Tesla = () => {
 
 <nav className='tesla-nav-container' id='nav-container'>
                 <div className='tesla-nav-wrapper'>
-                    <div className='tesla-nav-stock-header'> <div><div><img src={aimageNine}></img></div></div> </div>
+                    <div className='tesla-nav-stock-header'> <div><div><img src={teslaWhite}></img></div></div> </div>
 
                     <div onClick={Menu} className='tesla-span-header' id="span-header"><div><span>&#61;</span></div></div>
 

@@ -19,6 +19,7 @@ import aLogoEight from '../images/appleImageEight.png';
 import aLogoNine from '../images/appleImageNine.png';
 import aLogoOwner from '../images/Timothy D. Cook.png';
 import logo from '../images/top-product-design-clutch.png';
+import appleUpdatedLogo from '../images/appletextline.png'
 import './apple.css'
 
 
@@ -137,7 +138,7 @@ return (
 
 <nav className='nav-container' id='nav-container'>
             <div className='nav-wrapper'>
-                <div className='nav-stock-header'> <div><div><img src={apple}></img></div></div> </div>
+                <div className='nav-stock-header'> <div><div><img src={appleUpdatedLogo}></img></div></div> </div>
 
                 <div onClick={Menu}  className=' span-header' id="span-header"><div><span>&#61;</span></div></div>
 
@@ -362,9 +363,9 @@ return (
 
                    <div className="Apple-Wrapper-Invest-Five" id="apple-wrapper-invest-five">
                       <div><div><h3>Global Expansion</h3></div></div>
-                      <div><div><p>Amazon is increasingly expanding its presence in 
-                        international markets, which presents enormous growth potential 
-                        as it taps into emerging markets with large populations and growing internet penetration.</p></div></div>
+                      <div><div><p>Apple is continually broadening its presence in global markets, 
+                        unlocking significant growth opportunities by tapping into emerging regions with 
+                        expanding populations and increasing internet connectivity.</p></div></div>
 
 
                    </div>

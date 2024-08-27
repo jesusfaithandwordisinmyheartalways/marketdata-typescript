@@ -32,6 +32,10 @@ body{
     transition: 0.7s linear;
 }
 
+html {
+    overflow-y: scroll;
+}
+
 
 
 * {
@@ -81,7 +85,6 @@ body{
     width:99px;
     object-fit: contain;
     background:none;
-    mix-blend-mode: multiply;
 }
 
 

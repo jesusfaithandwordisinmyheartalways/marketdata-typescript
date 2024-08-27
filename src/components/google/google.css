@@ -35,6 +35,12 @@ body{
 
 
 
+html {
+    overflow-y: scroll;
+}
+
+
+
 * {
     box-sizing: border-box;
 }
