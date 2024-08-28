@@ -363,29 +363,31 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin:0 auto;
-    min-width: 1650px;
-    gap:30px;
+    min-width: 1000px;
+    gap:140px;
     text-align: center;
     margin-block:70px;
-    animation-name: wrapper;
+    animation-name: imageGallery;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function:linear;
     animation-delay: 0s;
     animation-direction:normal;
-    animation-duration:25s;
+    animation-duration:30s;
     position: relative;
     top:30px;
+    
 }
 
 
-@keyframes wrapper {
+@keyframes imageGallery {
     from {
-       top:30px; left: 1380px;
+       top:30px; left: 1349px;
     }
+
     to {
-        top:30px; left: -1490px;
+        top:30px; left: -2000px;
     }
 
     
@@ -395,13 +397,44 @@ body {
 
 
 .wrapper-header {
-    width: 1100px;
+    width: 1050px;
     height: 210px;
     border-radius: 10%;
-    border:1px solid black;
+    border:3px solid lightgreen;
     color:black;
     background-color:whitesmoke
 }
+
+
+
+
+.wrapper-header:nth-last-of-type(2) {
+    border:3px solid skyblue;
+
+}
+
+
+
+.wrapper-header:nth-last-of-type(3) {
+    border:3px solid red;
+
+}
+
+
+
+.wrapper-header:nth-last-of-type(4) {
+    border:3px solid dodgerblue;
+
+}
+
+
+.wrapper-header:nth-last-of-type(5) {
+    border:3px solid orange;
+
+}
+
+
+
 
 
 .wrapper-header img {

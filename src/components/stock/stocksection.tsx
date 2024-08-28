@@ -9,7 +9,6 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import '../stock/stocks.css';
 import { Link } from 'react-router-dom';
-import amazon from '../images/-amazon-com.png';
 import amazonUpdatedLogo from '../images/amazonupdatedlogo.jpg'
 import apple from '../images/Apple-stock-logo-.png';
 import google from '../images/google.png';
@@ -378,6 +377,9 @@ const Stocks = () => {
 
         
       </div>
+
+
+
 
      </div>
      

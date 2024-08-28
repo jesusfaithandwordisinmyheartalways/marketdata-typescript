@@ -596,7 +596,7 @@ li {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: seagreen;
+    color: black;
     animation: rotateCCWW calc(var(--rotate-speed) * 1s) var(--easing) infinite;
 }
 a {
